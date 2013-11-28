@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <chars>3</chars>
+  <player>
+    <personality>1</personality>
+    <iq>2</iq>
+    <lives>5</lives>
+    <color>9</color>
+  </player>
+  <player>
+    <personality>1</personality>
+    <iq>4</iq>
+    <lives>5</lives>
+    <color>12</color>
+  </player>
+  <player>
+    <personality>1</personality>
+    <iq>0</iq>
+    <lives>5</lives>
+    <color>13</color>
+  </player>
+  <player>
+    <personality>1</personality>
+    <iq>0</iq>
+    <lives>5</lives>
+    <color>11</color>
+  </player>
+</root>

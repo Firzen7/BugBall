@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58282057-3B14-4220-AE33-4C398A120A58}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BugBall</RootNamespace>
+    <AssemblyName>BugBall</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="logic\Player.cs" />
+    <Compile Include="logic\Word.cs" />
+    <Compile Include="logic\Words.cs" />
+    <Compile Include="main\Main.cs" />
+    <Compile Include="main\Manager.cs" />
+    <Compile Include="enums\PlayerType.cs" />
+    <Compile Include="enums\Iq.cs" />
+    <Compile Include="logic\TimeMeasurer.cs" />
+    <Compile Include="logic\ReactionTimes.cs" />
+    <Compile Include="logic\AverageTime.cs" />
+    <Compile Include="main\Menu.cs" />
+    <Compile Include="other\MyDeepClone.cs" />
+    <Compile Include="other\Colors.cs" />
+    <Compile Include="other\Config.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="logic\" />
+    <Folder Include="main\" />
+    <Folder Include="enums\" />
+    <Folder Include="other\" />
+  </ItemGroup>
+</Project>
